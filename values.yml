@@ -1,0 +1,12 @@
+artifactory: artifactory
+pipelines:
+  name: template_npm_build
+gitRepo:
+  name: github__tsuyo__jfrog_pipelines_template__system_npm_build
+  provider: tsuyo_github
+  path: tsuyo/jfrog-pipelines-quickstart--npm-build
+artifactoryRepo:
+  resolver:
+    name: npm
+  target:
+    name: npm
